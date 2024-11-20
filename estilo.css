@@ -1,0 +1,502 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Estilo encabezado*/
+header {
+    display: flex;
+    height: 80px;
+    background-color: rgb(202, 168, 235);
+    justify-content: space-between;
+    padding: 20px;    
+}
+
+.Logo {
+    display: flex;   
+    align-items: center;
+    
+}
+
+.Logo img {
+    height: 100px;
+    margin-right: 200px;  
+}
+/*Final estilo encabezado*/
+
+/*Estilos menús y submenús*/
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 50px;
+    border: 2px solid #000;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
+    top: 15px;       
+}
+
+nav a:hover {
+    background-color: rgb(73, 61, 236);  
+    color: white;                         
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posiciona el submenú justo debajo del enlace "Quienes somos" */
+    left: 50%;
+    transform: translateX(-50%); /* Ajusta el desplazamiento para centrarlo */
+    min-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: 2px;
+}
+
+.dropdown-content a:hover {
+    background-color: #a2f780;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*Tinal de Estilos menús y submenús*/
+
+/* Estilos para el main content */
+main {
+    margin-top: 30px; /* Espacio para no cubrir el encabezado y menú */
+    padding-top: 300px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 100px;
+    background-color: #8a8bd4;
+    border-radius: 8px;
+    
+}
+/* Final Estilos del main content */
+
+/* Inicio estilo pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* final estilo pie de página */
+
+
+  /* Estilo submenu condiciones corredor vial */
+  .content-section { display: none; }
+  /* Muestra la sección activa */
+  .visible { display: block; }
+
+  #condicionesCorredor, #estadoclima, #visioninstitucional, #misioninstitucional, #mantenimiento, #peajes, #basculas, #documentospdf {
+    text-align: left;
+    margin-left: -150px;
+    font-size: 30px;
+    margin-top: -280px;   
+}
+
+.documentospdf{
+    margin-left: 0px !important;
+    width: 100% !important;
+}
+h2 {
+    text-align: center;
+}
+
+#condicionesCorredor img {
+    width: 90%; /* Ajusta el ancho según lo necesites */
+    height: 300px; /* Mantiene la proporción de la imagen */    
+    margin-top: 20px; /* Espaciado superior entre el texto y la imagen */
+    margin-left: 100px; /* Esto mueve la imagen a la derecha */     
+}
+
+/* Fintal Estilo submenu condiciones corredor vial */
+
+/* Inicio Estilo submenu estado del clima */
+#estadoclima img, #misioninstitucional img, #visioninstitucional img, #mantenimiento img, #peajes img, #basculas img {
+    width: 50%; /* Ajusta el tamaño de la imagen */
+    max-width: 600px; /* Limita el tamaño máximo a 600px */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 8px; /* Redondea las esquinas de la imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+    margin-top: 20px; /* Añade un margen superior */
+    display: block; /* Hace que la imagen sea un bloque, para permitir la alineación */
+    margin-left: auto; /* Centra la imagen a la izquierda */
+    margin-right: auto; /* Centra la imagen a la derecha */
+}
+
+.imagen-boton {
+    text-align: center; /* Centra los elementos dentro del contenedor */
+    display: block;
+    margin-top: 20px; /* Opcional: espacio arriba del contenedor */
+}
+
+
+.boton-clima {
+    display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+    padding: 12px 24px; /* Añade espacio alrededor del texto */
+    font-size: 25px; /* Tamaño de la fuente */
+    background-color: #b3ff00; /* Color de fondo del botón */
+    color: rgb(27, 23, 23); /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado por defecto en enlaces */
+    border-radius: 5px; /* Redondea las esquinas */
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin-top: 20px; /* Espacio superior */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.boton-clima:hover {
+    background-color: #44d18a; /* Color de fondo al pasar el mouse */
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+}
+/* Fintal Estilo submenu estado del clima */
+
+/*Servicios del concesionario */
+.serviciosconcesionario {
+    text-align: center; /* Centra el contenido dentro de la div */
+    margin-left: -287px; /* Mueve el contenedor más hacia la izquierda */
+    background-color: #cfdbcf; /* Color de fondo */
+    width: 30%; /* Ancho del contenedor */
+    padding: 1px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    margin-top: -387px; /* Mueve el contenedor más hacia la parte superior */
+}
+
+.serviciosconcesionario h5 {
+    font-size: 20px; /* Tamaño del texto del encabezado */
+    color: #161579; /* Color del texto del encabezado */
+}
+
+.serviciosconcesionario h6 {
+    font-size: 20px; /* Tamaño del texto de los subtítulos */
+    color: #f02e5f; /* Color de los subtítulos */
+    margin-top: 1px; /* Espacio superior entre los subtítulos y las imágenes */
+}
+
+.serviciosconcesionario img {
+    width: 95px; /* Tamaño de las imágenes */
+    margin-right: 15px; /* Espacio a la derecha de las imágenes */
+    display: inline-block; /* Hace que las imágenes se alineen horizontalmente */
+    vertical-align: middle; /* Alinea verticalmente las imágenes y los textos */   
+}
+/*Final servicios del concesionario */
+
+/* Estilo del formulario */
+.form-register {
+    max-width: 300px; /* Reduce el ancho máximo del formulario */
+    background: #434a52;
+    padding: 2rem; /* Reduce el espacio interno general */
+    margin: 2rem auto; /* Mantén el margen automático para centrarlo horizontalmente */
+    margin-top: -850px; /* Ajusta el margen superior */
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;      
+    margin-left: auto;
+    margin-right: -280px;
+}
+
+.form-register h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem; /* Reduce el espacio entre el título y los campos */
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 0.6rem; /* Reduce el relleno en los campos de entrada */
+    border-radius: 4px;
+    margin-bottom: 0.5rem; /* Reduce el espacio entre los campos */
+    border: 1px solid #497ff5;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Estilo para los campos cuando hay un error de validación */
+.controls:invalid {
+    border-color: white;
+}
+
+.form-register p {
+    height: 2rem; /* Ajusta la altura del párrafo */
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem; /* Ajusta la altura de línea */
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 0.8rem; /* Reduce el relleno del botón */
+    color: white;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.form-register .botons:hover {
+    background-color: #9c22ff;
+    cursor: pointer;
+}
+/* Final estilo del formulario */
+
+/* Estilo Resolución, formulario */
+
+.resolucion, .formulario, .tarifario {
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido dentro de cada div esté apilado (imagen arriba y texto abajo) */
+    align-items: center; /* Centra el contenido dentro de cada div */
+    justify-content: center;
+    max-width: 30%; /* Limita el ancho de cada div para que no se expandan demasiado */
+    margin: 0 20px; /* Añade espacio entre los elementos */
+    text-align: center; /* Alinea el texto dentro de cada elemento */
+}
+
+.contenedor-elem {
+    display: flex; /* Alinea los divs horizontalmente */
+    justify-content: space-evenly; /* Distribuye los elementos de forma equilibrada */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    margin-top: 150px; /* Ajusta el margen superior para desplazar hacia abajo */
+}
+
+
+
+.resolucion img, .formulario img, .tarifario img {
+    width: 80px; /* Ajusta el ancho de la imagen */
+    height: 80px; /* Ajusta el alto de la imagen */
+    cursor: pointer; /* Cambia el cursor al estilo de mano */ 
+}
+    
+
+.resolucion p, .formulario p, .tarifario p {
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    color: rgb(14, 11, 187); /* Cambia el color del texto, opcional */
+ 
+}
+
+/* Efecto al pasar el mouse */
+.resolucion img:hover, .formulario img:hover, .tarifario img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen al pasar el ratón */
+}
+
+/* Estilos para la sección de Subir Documentos */
+.document-upload {
+    margin: 40px 0;
+    padding: 10px;
+    background-color: #cfdbcf;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    margin: 20px auto;
+    text-align: center;
+   
+}
+
+.document-upload h4 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas */
+.document-upload label {
+    display: block;
+    margin: 1.5px 4px 5px;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;  /* Aumentar el margen inferior */
+}
+
+/* Estilos para los inputs de tipo file */
+.document-upload input[type="file"] {
+    width: 70%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    
+}
+
+/* Estilos para el botón de submit */
+.document-upload input[type="submit"] {
+    width: 75%;
+    padding: 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.document-upload input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Diseño de los archivos cargados (si es necesario) */
+.document-upload input[type="file"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Final para la sección de Subir Documentos */
+
+
+/*Diseño de verificación del beneficio*/
+.verificacion-beneficio {
+    padding: 20px;
+    background-color: #9c9696;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.verificacion-beneficio h3 {
+    margin-bottom: 20px;
+}
+
+#resultado-verificacion {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e7f7e7;
+    border: 1px solid #c3e6c3;
+    border-radius: 5px;
+    display: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #44e244;
+    border: none;
+    color: rgb(22, 21, 21);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #aeddae;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+}
+
+/*Final estilo verificación de beneficio */
+
+
+.container-carousel {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajuste de sombra */
+    overflow: hidden;
+    margin: 0 auto;
+    top: 100px;
+}
+
+.carruseles {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-section {
+    width: calc(100% / 10);
+    height: 100%;
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0, -50%);
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.btn-left {
+    left: 20px; /* Agrega posición a la izquierda */
+}
+
+.btn-right {
+    right: 20px;
+}
+
+.content-sectionA{
+    margin-top: -200px;
+}
+

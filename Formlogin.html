@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header> <!--Encabezado de página-->
+        <div class="Logo">
+            <img src="./IMAGENES/logo.png" alt="Logo de la empresa"/>
+            <h2>BENEFICIO DE TARIFA DIFERENCIAL ESTACIONES DE PEAJE</h2>
+        </div>
+    </header> <!--Termina el encabezado de página-->
+
+
+    <section class="form-login">
+        <h5>Formulario Login</h5>
+        <form method="post" action="login.php">
+            <input class="controls" type="text" name="correo_electronico" placeholder="Correo" required>
+            <input class="controls" type="password" name="password" placeholder="Contraseña" required>
+            <select class="controls" name="tipo_usuario" required>
+                <option value="usuario">Usuario</option>
+                <option value="administrador">Administrador</option>
+            </select>
+            <input class="buttons" type="submit" value="Ingresar">
+            <p><a href="recuperar_password.html">¿Olvidaste tu contraseña?</a></p>
+        </form>
+    </section>
+</body>
+</html>

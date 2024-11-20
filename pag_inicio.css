@@ -1,0 +1,85 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 5px;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background-color: #f0f0f0; /* Fondo de color claro (puedes cambiar el color aquí) */
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex;
+    height: 80px;
+    background-color: rgb(202, 168, 235);
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Estilo del formulario */
+.form-register {
+    max-width: 300px;
+    background-color: rgb(102, 101, 104);;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 0.6rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #497ff5;
+    font-size: 1rem;
+    color: white;
+}
+
+.controls:invalid {
+    border-color: white;
+}
+
+.form-register p {
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 0.8rem;
+    color: white;
+    margin: 2rem 0;
+    font-size: 1rem;
+}

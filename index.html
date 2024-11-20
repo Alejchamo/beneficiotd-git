@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="./pag_inicio.css">
+</head>
+<body>
+    <header> <!--Encabezado de página-->
+        <div class="Logo">
+            <img src="./IMAGENES/logo.png" alt="Logo de la empresa"/>
+            <h2>BENEFICIO DE TARIFA DIFERENCIAL ESTACIONES DE PEAJE</h2>
+        </div>
+    </header> <!--Termina el encabezado de página-->
+
+    <!--Inicio de formulario-->
+    <form class="form-register" action="procesar.php" method="post">
+        <h4>Formulario de Registro</h4>
+    
+        <!-- Campos comunes para ambos (usuario y administrador) -->
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+        <input class="controls" type="email" name="correo_electronico" id="correo_electronico" placeholder="Correo electrónico" required>
+        <input class="controls" type="password" name="password" id="password" placeholder="Contraseña" required>
+        <input class="controls" type="password" name="confirm_password" id="confirm_password" placeholder="Confirmar contraseña" required>
+    
+        
+        <!-- Campos específicos para el usuario -->
+        <div id="usuario-fields" style="display:none;">
+            <input class="controls" type="text" name="celular" id="celular" placeholder="Celular" required>
+            <input class="controls" type="text" name="cedula" id="cedula" placeholder="Cedula">
+            <input class="controls" type="text" name="municipio" id="municipio" placeholder="Municipio" required>
+            <input class="controls" type="text" name="placa_del_vehiculo" id="placa_del_vehiculo" placeholder="Placa del vehiculo" required>
+            <input class="controls" type="text" name="clase_de_usuario" id="clase_de_usuario" placeholder="Clase de usuario" required>
+        </div>
+    
+        <!-- Campos específicos para el administrador -->
+        <div id="admin-fields" style="display:none;">
+            <input class="controls" type="text" name="cargo" id="cargo" placeholder="Cargo" required>
+        </div>
+
+        <!-- Opción de selección de tipo de usuario -->
+        <select class="controls" name="tipo_usuario" id="tipo_usuario" required onchange="toggleFields()">
+            <option value="usuario">Registrarse como Usuario</option>
+            <option value="administrador">Registrarse como Administrador</option>
+        </select>
+        <div class="estilocheck" style="display: flex; flex-direction: row;">
+            <input type="checkbox" name="intereses" value="tecnologia" required>
+            <p>Estoy de acuerdo con <a href="./IMAGENES/Tercondiciones.pdf" target="_blank">Términos y Condiciones</a></p>
+        </div>
+        
+        <input class="botons" type="submit" value="ACEPTAR">  
+        <p><a href="/BENEFICIOTDPEAJES/Formlogin.html">¿Ya tengo Cuenta? Iniciar sesión</a></p>
+
+    </form>
+    <!--Final del formulario--> 
+<script src="Script.js" defer></script> 
+</body>
+
+</html>
